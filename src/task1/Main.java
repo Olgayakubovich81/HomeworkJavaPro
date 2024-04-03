@@ -1,15 +1,16 @@
-package task1;
+package Task1;
 
-import task1.EnglishToRussianTranslator;
+import Task1.DataUtil;
+
+import static java.lang.Math.max;
 
 public class Main {
-    public static void main(String[] args) {
-        EnglishToRussianTranslator englishToRussianTranslator = new EnglishToRussianTranslator("Иван", 30, "М");
-        String result1 = englishToRussianTranslator.translate("Hello, how are you?");
-        System.out.println(result1);
+public static void main(String[]args){
+        int[]intArray={3,7,1,5,9};
+        double[]doubleArray={2.5,4.8,1.3,6.7,3.2};
 
-        RussianToGermanTranslator russianToGermanTranslator = new RussianToGermanTranslator("Елена", 25, "Ж");
-        String result2 = russianToGermanTranslator.translate("Привет, как дела?");
-        System.out.println(result2);
-    }
-}
+        System.out.println("AVG Integer Array: " + DataUtil.avg(intArray));
+        System.out.println("MAX Double Array: "+ DataUtil.max(doubleArray));
+        System.out.println("MIN Integer Array: "+DataUtil.min(intArray));
+        }
+        }
